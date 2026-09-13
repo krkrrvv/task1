@@ -10,17 +10,18 @@ fun main() {
       }
       println("Строка не может быть пустой!")
     }
+    val name2 = name.uppercase()
     var res = ""
     var count = 1
-    for (i in 1..name.length)
+    for (i in 1..name2.length)
     {
-        if (i < name.length && name[i] == name[i - 1])
+        if (i < name2.length && name2[i] == name2[i - 1])
         {
             count++
         }
         else
         {
-            res += name[i - 1]
+            res += name2[i - 1]
             if (count > 1) {
                 res += count
             }
